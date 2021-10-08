@@ -1,0 +1,171 @@
+.blank::after{
+    content: "";
+    display: block;
+    border-left: 1px solid #F96D5C;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    height: 16px;
+}
+
+.header{
+    height: 120px;
+    background: linear-gradient(-180deg,#f53d2d,#f63);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.navbar__item{
+    padding: 8px 7px;
+}
+
+.navbar__item,
+.navbar__item-link{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 300px;
+    position: relative;
+    color: var(--white-color);
+}
+.navbar__icon:hover,
+.navbar__item:hover,
+.navbar__item-link:hover{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.navbar__icon{
+    font-size: 1.6rem;
+    padding: 0 3px;
+}
+
+.navbar__item--none{
+    cursor: text;
+    color: var(--white-color);
+}
+
+/* QR code */
+.navbar__qrcode-container{
+    display: none;
+    width: 186px;
+    position: absolute;
+    top: 100%;
+    left: 7px;
+    border-radius: 4px;
+    background-color: var(--white-color
+    );
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 26%);
+    animation: FadeIn ease-in 0.5s;
+}
+
+.navbar__app{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__qrcode-container>img{
+    width: 100%;
+}
+
+.navbar__app-link:first-child{
+    margin-left: 11px;
+}
+
+.navbar__app-link:last-child{
+    margin-right: 11px;
+}
+
+.navbar__app-link>img{
+    height: 18px;
+}
+
+.navbar__item--show:hover .navbar__qrcode-container{
+    display: block 
+}
+
+/* Notify header */
+
+.notify{
+    position: absolute;
+    background-color: var(--white-color);
+    right: 0;
+    width: 398px;
+    top: 100%;
+    border: 1px solid #d3d3d3;
+}
+
+.notify__header{
+    color: var(--text-color);
+    height: 40px;
+    padding: 12px 0;
+    display: block;
+    width: 100%;
+}
+
+.notify__header h3{
+    margin: 0;
+    
+}
+
+.notify__list{
+
+}
+
+.notify__item{
+    
+}
+
+.notify__link{
+    display: flex;
+}
+
+.notify__img{
+    width: 48px;
+}
+
+.notify__info{
+
+}
+
+.notify__info-name{
+
+}
+
+.notify__info-discription{
+
+}
+
+.search__container{
+    display: flex;
+
+}
+
+.search__logo-container{
+    width: 200px;
+}
+
+.search__cart{
+    width: 200px;
+    
+}
+
+.search__bar-container{
+
+}
+
+.search__recommend-list{
+
+}
+
+.search__recommend-item{
+    display: inline-block;
+}
+
+.search__recommend-item >a{
+    color: var(--white-color);
+}
+
