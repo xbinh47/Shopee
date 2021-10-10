@@ -63,6 +63,7 @@ html{
     border: none;
     font-size: 1.4rem;
     border-radius: 4px;
+    line-height: 0;
 }
 
 .btn--primary{
@@ -73,6 +74,7 @@ html{
 /* Modal */
 .modal{
     display: flex;
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -96,4 +98,9 @@ html{
     height: 500px;
     background-color: var(--white-color);
     animation: growth ease-in 0.1s;
+}
+
+.modal__container--login{
+    width: 430px;
+    height: 400px;
 }

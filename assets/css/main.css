@@ -228,14 +228,6 @@
 
 /* Authen modal */
 
-.modal__body{
-
-}
-
-.auth-form{
-
-}
-
 .auth-form__container {
     padding: 0 32px;
 }
@@ -264,10 +256,6 @@
     margin-bottom: 12px;
 }
 
-.auth-form__body{
-
-}
-
 .auth-form__input{
     display: block;
     padding: 12px 8px;
@@ -289,6 +277,23 @@
 .auth-form__policy-link{
     color: var(--special-color);
 }
+
+.auth-form__help{
+    position: absolute;
+    right: 32px;
+    font-size: 1.3rem;
+    padding-top: 8px;
+}
+
+.auth-form__help-password{
+    color: var(--special-color);
+    margin-right: 32px;
+}
+
+.auth-form__help-link{
+    color: rgba(0,0,0,0.5);
+}
+
 
 .auth-form__controls{
     position: absolute;
