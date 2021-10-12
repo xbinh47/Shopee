@@ -4,6 +4,9 @@
     --text-color: #333;
     --border-color:#dbdbdb;
     --special-color: #ee4d2d;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header-height: 120px;
+    --navbar-height: 34px
 }
 
 *{
@@ -55,6 +58,16 @@ html{
     }
 }
 
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-start));
+    }
+    to{
+        transform: scale(var(--growth-end));
+    }
+    
+}
+
 .btn{
     min-width: 142px;
     height: 36px;
@@ -80,6 +93,7 @@ html{
     right: 0;
     bottom: 0;
     left: 0;
+    animation: FadeIn linear 0.15s;
 }
 
 .modal__overlay{
@@ -97,7 +111,9 @@ html{
     width: 400px;
     height: 500px;
     background-color: var(--white-color);
-    animation: growth ease-in 0.1s;
+    --growth-start: 0.7;
+    --growth-end: 1;
+    animation: growth linear 0.15s;
 }
 
 .modal__container--login{
