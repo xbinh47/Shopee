@@ -8,6 +8,7 @@
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
     --header-height: 120px;
     --navbar-height: 34px
+    --facebook-color: #1877f2;
 }
 
 *{
